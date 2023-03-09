@@ -5,6 +5,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class AmazonTest extends BaseTest {
+	
+	int i =10;
 
 	// Not valid format
 //	@Test
