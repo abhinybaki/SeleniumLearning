@@ -19,7 +19,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.8.1</version>
+			<version>4.14.0</version>
 		</dependency>
 
 		<dependency>
@@ -65,7 +65,7 @@
 			<artifactId>extentreports</artifactId>
 			<version>${extentreports-version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>io.qameta.allure</groupId>
 			<artifactId>allure-testng</artifactId>
@@ -77,12 +77,11 @@
 			<artifactId>aspectjweaver</artifactId>
 			<version>${aspectj.version}</version>
 		</dependency>
-		
-		
+
 
 	</dependencies>
-	
-	
+
+
 	<build>
 		<plugins>
 			<plugin>
@@ -106,7 +105,8 @@
 					<reuseForks>true</reuseForks>
 					<argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
 					<suiteXmlFiles>
-						<suiteXmlFile>src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
+						<suiteXmlFile>
+							src/test/resources/testrunners/testng_regression.xml</suiteXmlFile>
 					</suiteXmlFiles>
 
 					<argLine>
@@ -125,13 +125,9 @@
 
 			</plugin>
 
-			
-
 
 		</plugins>
 	</build>
-
-
 
 
 </project>
