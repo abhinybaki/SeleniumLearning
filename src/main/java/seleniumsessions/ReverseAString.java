@@ -8,6 +8,7 @@ public class ReverseAString {
 		String reverse = new StringBuilder(str).toString().toLowerCase();
 		System.out.println("My reversed string is : " + reverse);
 		
+		int i=10;
 		
 		
 	}
